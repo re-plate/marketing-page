@@ -140,7 +140,7 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 2000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 h1,
@@ -269,6 +269,10 @@ nav button img {
 }
 img {
   width: 100%;
+}
+.whyreplate P {
+  margin: 0rem 8rem;
+  margin-bottom: 4rem;
 }
 .howitworks {
   text-align: center;
