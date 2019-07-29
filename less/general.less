@@ -1,5 +1,7 @@
 /* General Styles */
+
 /*reset*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,8 +130,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /*Color Variables*/
+
+@header-font: #4B5B41;
+@button-font: #D9CBB0;
+
+@main-color: #0E535E;
+@button-hover: #4F8189;
+
+@buttonalt: #5F191B;
+@buttonalt-hover: #8A5759;
+
+
+
 /*Global Styles*/
+
 * {
   box-sizing: border-box;
 }
@@ -164,59 +180,4 @@ p {
   line-height: 1.5;
   font-size: 1.5rem;
   padding-bottom: 10px;
-}
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  background: #0E535E;
-}
-nav .dropdown {
-  overflow: hidden;
-}
-nav .dropdown:hover .dropContent {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Eczar', serif;
-  font-size: 2.8rem;
-}
-nav .dropdown .dropContent {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-nav a {
-  background: #0E535E;
-  color: #D9CBB0;
-  padding: 2rem 4rem;
-  margin-left: 10rem;
-  text-decoration: none;
-}
-nav button {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  background: #0E535E;
-  border: none;
-  color: #D9CBB0;
-  padding: 0, 0;
-}
-nav button h1 {
-  font-size: 7rem;
-}
-nav button img {
-  width: 10rem;
-  margin: 1rem;
-}
-.login {
-  display: flex;
-  justify-content: flex-end;
-}
-.login a {
-  display: flex;
-  justify-content: flex-end;
-  color: #D9CBB0;
-  font-size: 8rem;
-  text-decoration: none;
 }
