@@ -3,6 +3,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    height: 9rem;
     background: @main-color;
     
     .dropdown{
@@ -26,6 +27,9 @@ nav {
             padding: 2rem 4rem;
             margin-left: 10rem;
             text-decoration: none;
+            &:hover{
+                color: @link-hover;
+            }
         }
         button{
             display: flex;
@@ -34,9 +38,13 @@ nav {
             background: @main-color;
             border: none;
             color: @button-font;
-            padding: 0, 0;
+            padding: 0px, 0px;
             h1{
             font-size: 7rem;
+            color: @button-font;
+            &:hover{
+                color: @link-hover;
+            }
 
             }
             img{
@@ -53,8 +61,12 @@ nav {
             display: flex;
             justify-content: flex-end;
             color: @button-font;
-            font-size: 8rem;
-            text-decoration: none; 
+            font-family: 'Eczar', serif;
+            font-size: 5rem;
+            text-decoration: none;
+            &:hover{
+                color: @link-hover;
+            } 
         } 
     }
 

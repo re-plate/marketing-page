@@ -136,13 +136,28 @@ table {
 @header-font: #4B5B41;
 @button-font: #D9CBB0;
 
+@link-hover: #E3D9C5;
+
 @main-color: #0E535E;
 @button-hover: #4F8189;
 
 @buttonalt: #5F191B;
 @buttonalt-hover: #8A5759;
 
+@standard-margin: 1.5rem;
 
+/*Mix Ins*/
+
+.top-button(){
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Eczar', serif;
+    font-size: 2rem;
+    background-color: @buttonalt;
+    color: @button-font;
+    border: none;
+    border-radius: 2rem;
+  }
 
 /*Global Styles*/
 
@@ -155,7 +170,7 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 h1,
@@ -164,20 +179,26 @@ h3,
 h4,
 h5 {
   font-family: 'Eczar', serif;
+  color: @header-font;
+  padding: 15px 0;
+  text-align: center;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
 }
 h3 {
-  font-size: 25rem;
-  padding-bottom: 10px;
+  font-size: 2.5rem;
 }
 p {
   line-height: 1.5;
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  margin: 15px;
+}
+hr{
+    background-color: @main-color;
+    margin: 15px;
+    height: 3px;
 }

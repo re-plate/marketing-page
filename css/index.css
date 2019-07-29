@@ -129,6 +129,7 @@ table {
   border-spacing: 0;
 }
 /*Color Variables*/
+/*Mix Ins*/
 /*Global Styles*/
 * {
   box-sizing: border-box;
@@ -139,7 +140,7 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 h1,
@@ -148,28 +149,35 @@ h3,
 h4,
 h5 {
   font-family: 'Eczar', serif;
+  color: #4B5B41;
+  padding: 15px 0;
+  text-align: center;
 }
 h1 {
   font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
 }
 h3 {
-  font-size: 25rem;
-  padding-bottom: 10px;
+  font-size: 2.5rem;
 }
 p {
   line-height: 1.5;
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  margin: 15px;
+}
+hr {
+  background-color: #0E535E;
+  margin: 15px;
+  height: 3px;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  height: 9rem;
   background: #0E535E;
 }
 nav .dropdown {
@@ -193,6 +201,9 @@ nav a {
   margin-left: 10rem;
   text-decoration: none;
 }
+nav a:hover {
+  color: #E3D9C5;
+}
 nav button {
   display: flex;
   align-items: center;
@@ -200,10 +211,14 @@ nav button {
   background: #0E535E;
   border: none;
   color: #D9CBB0;
-  padding: 0, 0;
+  padding: 0px, 0px;
 }
 nav button h1 {
   font-size: 7rem;
+  color: #D9CBB0;
+}
+nav button h1:hover {
+  color: #E3D9C5;
 }
 nav button img {
   width: 10rem;
@@ -217,6 +232,57 @@ nav button img {
   display: flex;
   justify-content: flex-end;
   color: #D9CBB0;
-  font-size: 8rem;
+  font-family: 'Eczar', serif;
+  font-size: 5rem;
   text-decoration: none;
+}
+.login a:hover {
+  color: #E3D9C5;
+}
+.topsection {
+  position: relative;
+}
+.topsection h2 {
+  color: #D9CBB0;
+  font-size: 8rem;
+}
+.topbuttons {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  position: absolute;
+}
+.topbuttons button {
+  opacity: 0.8;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  background-color: #5F191B;
+  color: #D9CBB0;
+  border: none;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+.topbuttons button:hover {
+  background-color: #8A5759;
+}
+img {
+  width: 100%;
+}
+.howitworks {
+  text-align: center;
+  display: flex;
+}
+.howitworks .textbox {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  justify-content: space-between;
+  width: 33%;
+}
+.volunteertop .topimgs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
