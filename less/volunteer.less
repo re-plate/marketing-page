@@ -1,8 +1,13 @@
 .volunteertop{
     div{
         img{
-        width: 100%,
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
+}
+@media @mobile{
+    display: none;
 }
 }
 
@@ -41,13 +46,17 @@
         @media @mobile{
             .mobile-format();
         }
+    @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     }
 
 
 .inverse-content{
     @media @mobile{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 }

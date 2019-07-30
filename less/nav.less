@@ -1,3 +1,4 @@
+
 nav {
     display: flex;
     align-items: center;
@@ -7,6 +8,7 @@ nav {
     
     .dropdown{
         overflow: hidden;
+        @media @desktop{
         &:hover .dropContent{
             display:flex;
             flex-direction: column;
@@ -14,22 +16,35 @@ nav {
             font-size: 2.8rem;
             
         }
+    }
         .dropContent{
             display: none;
             position: absolute;
             z-index: 1;
-            
-            
+            @media @mobile{
+                position: static;
+            }
+                       
          a{
             background: @main-color;
             color: @button-font;
             padding: 2rem 4rem;
             margin-left: 10rem;
             text-decoration: none;
+            @media @mobile{
+                padding: 0 0;
+                padding-bottom: 2rem;
+                margin: 0 auto;
+                font-size: 2rem;
+            }
             &:hover{
                 color: @link-hover;
                 font-weight: bolder;
             }
+        }
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
         }
     }
         .button{
@@ -54,11 +69,24 @@ nav {
             img{
                 width: 10rem;
                 margin: 1rem;
+
+                @media @mobile{
+                    width: 50%;
+                }
+            }
+            @media @mobile{
+                display: flex;
+                flex-direction: column;
             }
         }
     }
+@media @mobile{
+    display: flex;
+    justify-content: center;
+}
+}
         
-        }
+
         .login{
             display: flex;
             justify-content: flex-end;
@@ -73,6 +101,8 @@ nav {
                 color: @link-hover;
                 font-weight: bolder;
             } 
-        } 
+        }
+        @media @mobile{
+            display: none;
+        }
     }
-

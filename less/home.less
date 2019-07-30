@@ -6,10 +6,15 @@
         }
     }
     .topbuttons{
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%, -90%);
+        bottom: 20%;
+        left:35%;
         position: absolute;
+
+        @media @mobile{
+            bottom: 5px;
+            left: 50px;
+            position: absolute;
+        }
         button{
             opacity: 0.8;
         .top-button();
@@ -27,6 +32,10 @@
     P{
     margin: 0rem 8rem;
     margin-bottom: 4rem;
+
+    @media @mobile{
+        margin: 1.5rem 1.5rem;
+    }
 }
 }
     
@@ -42,18 +51,42 @@
         flex-direction: column;
           width: 48%;
           padding-right: 1%;
+  
+          @media @mobile{
+              width: 96%;
+              padding: 2%;
+              text-align: center;
+          }
         }
         .img-content {
             width: 48%;
             padding-left: 1%;
+  
+            @media @mobile{
+                width: 96%;
+                padding: 2%;
+            }
       
             img {
               border-radius: 10px;
               }
-}
+        }
+        @media @mobile{
+            .mobile-format();
+        }
+    @media @mobile{
+        flex-direction: column-reverse;
     }
-}
-
+    }
+  
+  
+  .inverse-content{
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  }
 footer{
     text-align: center;
     p{
