@@ -144,7 +144,11 @@ table {
 @buttonalt: #5F191B;
 @buttonalt-hover: #8A5759;
 
+
 @standard-margin: 1.5rem;
+//Responsive
+
+@mobile: ~"(max-width: 500px)";
 
 /*Mix Ins*/
 
@@ -157,6 +161,15 @@ table {
     color: @button-font;
     border: none;
     border-radius: 2rem;
+  }
+
+.mobile-format(@mobilewidth: 100%){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: @mobilewidth;
   }
 
 /*Global Styles*/
@@ -202,3 +215,11 @@ hr{
     margin: 15px;
     height: 3px;
 }
+
+.container{
+  background-color: @button-font;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2rem;
+}
+
