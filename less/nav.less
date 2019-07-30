@@ -3,7 +3,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    height: 9rem;
     background: @main-color;
     
     .dropdown{
@@ -29,10 +28,11 @@ nav {
             text-decoration: none;
             &:hover{
                 color: @link-hover;
+                font-weight: bolder;
             }
         }
     }
-        button{
+        .button{
             border: 1px solid blue;
             display: flex;
             align-items: center;
@@ -40,12 +40,14 @@ nav {
             background: @main-color;
             border: none;
             color: @button-font;
+            text-decoration: none;
             h1{
-            font-size: 7rem;
+            font-size: 6rem;
             color: @button-font;
             margin: 0px 0px;
             &:hover{
                 color: @link-hover;
+                font-weight: bolder;
             }
 
             }
@@ -65,10 +67,11 @@ nav {
             justify-content: flex-end;
             color: @button-font;
             font-family: 'Eczar', serif;
-            font-size: 5rem;
+            font-size: 4rem;
             text-decoration: none;
             &:hover{
                 color: @link-hover;
+                font-weight: bolder;
             } 
         } 
     }

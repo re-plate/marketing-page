@@ -177,7 +177,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  height: 9rem;
   background: #0E535E;
 }
 nav .dropdown {
@@ -203,8 +202,9 @@ nav .dropdown .dropContent a {
 }
 nav .dropdown .dropContent a:hover {
   color: #E3D9C5;
+  font-weight: bolder;
 }
-nav .dropdown button {
+nav .dropdown .button {
   border: 1px solid blue;
   display: flex;
   align-items: center;
@@ -212,16 +212,18 @@ nav .dropdown button {
   background: #0E535E;
   border: none;
   color: #D9CBB0;
+  text-decoration: none;
 }
-nav .dropdown button h1 {
-  font-size: 7rem;
+nav .dropdown .button h1 {
+  font-size: 6rem;
   color: #D9CBB0;
   margin: 0px 0px;
 }
-nav .dropdown button h1:hover {
+nav .dropdown .button h1:hover {
   color: #E3D9C5;
+  font-weight: bolder;
 }
-nav .dropdown button img {
+nav .dropdown .button img {
   width: 10rem;
   margin: 1rem;
 }
@@ -234,11 +236,12 @@ nav .dropdown button img {
   justify-content: flex-end;
   color: #D9CBB0;
   font-family: 'Eczar', serif;
-  font-size: 5rem;
+  font-size: 4rem;
   text-decoration: none;
 }
 .login a:hover {
   color: #E3D9C5;
+  font-weight: bolder;
 }
 .volunteertop div img {
   width: 100%;
