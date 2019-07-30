@@ -194,33 +194,34 @@ nav .dropdown .dropContent {
   position: absolute;
   z-index: 1;
 }
-nav a {
+nav .dropdown .dropContent a {
   background: #0E535E;
   color: #D9CBB0;
   padding: 2rem 4rem;
   margin-left: 10rem;
   text-decoration: none;
 }
-nav a:hover {
+nav .dropdown .dropContent a:hover {
   color: #E3D9C5;
 }
-nav button {
+nav .dropdown button {
+  border: 1px solid blue;
   display: flex;
   align-items: center;
   align-content: center;
   background: #0E535E;
   border: none;
   color: #D9CBB0;
-  padding: 0px, 0px;
 }
-nav button h1 {
+nav .dropdown button h1 {
   font-size: 7rem;
   color: #D9CBB0;
+  margin: 0px 0px;
 }
-nav button h1:hover {
+nav .dropdown button h1:hover {
   color: #E3D9C5;
 }
-nav button img {
+nav .dropdown button img {
   width: 10rem;
   margin: 1rem;
 }
@@ -238,6 +239,29 @@ nav button img {
 }
 .login a:hover {
   color: #E3D9C5;
+}
+.volunteertop div img {
+  width: 100%;
+}
+.volunteerbottom .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.volunteerbottom .content-section .text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 48%;
+  padding-right: 1%;
+}
+.volunteerbottom .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.volunteerbottom .content-section .img-content img {
+  border-radius: 10px;
 }
 .topsection {
   position: relative;
@@ -270,9 +294,35 @@ nav button img {
 img {
   width: 100%;
 }
-.whyreplate P {
+.whatreplate P {
   margin: 0rem 8rem;
   margin-bottom: 4rem;
+}
+.homebottom .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.homebottom .content-section .text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 48%;
+  padding-right: 1%;
+}
+.homebottom .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.homebottom .content-section .img-content img {
+  width: 300px;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  font-size: 10px;
 }
 .howitworks {
   text-align: center;
@@ -284,9 +334,4 @@ img {
   margin: 1.5rem;
   justify-content: space-between;
   width: 33%;
-}
-.volunteertop .topimgs {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
 }

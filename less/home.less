@@ -23,21 +23,40 @@
         width: 100%;
     }
 
-.whyreplate{
+.whatreplate{
     P{
     margin: 0rem 8rem;
     margin-bottom: 4rem;
 }
 }
     
-.howitworks{
-    text-align: center;
-    display: flex;
-    .textbox{
+.homebottom{
+    .content-section {
+        margin: 30px 0;
         display: flex;
-        flex-direction: row;
-        margin: @standard-margin;
+        flex-wrap: wrap;
         justify-content: space-between;
-        width: 33%;
+        .text-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+          width: 48%;
+          padding-right: 1%;
+        }
+        .img-content {
+            width: 48%;
+            padding-left: 1%;
+      
+            img {
+              width: 300px;
+              }
+}
+    }
+}
+
+footer{
+    text-align: center;
+    p{
+        font-size: 10px;
     }
 }
