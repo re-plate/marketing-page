@@ -180,6 +180,21 @@ hr {
   margin-right: 4rem;
   padding: 2rem;
 }
+.get-started button {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  background-color: #0E535E;
+  color: #D9CBB0;
+  border: none;
+  border-radius: 2rem;
+}
+.get-started button:hover {
+  background-color: #4F8189;
+}
 @media (min-width: 501px) {
   .mobile-nav {
     display: none;
@@ -368,6 +383,21 @@ nav .dropdown .button img {
     display: flex;
     flex-direction: column;
   }
+}
+.default {
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  background-color: #0E535E;
+  color: #D9CBB0;
+  border: none;
+  border-radius: 2rem;
+}
+.default:hover {
+  background-color: #4F8189;
 }
 .topsection {
   position: relative;

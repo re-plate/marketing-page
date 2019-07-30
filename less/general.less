@@ -226,6 +226,29 @@ hr{
   padding: 2rem;
 }
 
+.get-started{
+  button{
+    .defaultbutton();
+  }
+}
+
+.defaultbutton(){
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  background-color: @main-color;
+  color: @button-font;
+  border: none;
+  border-radius: 2rem;
+    &:hover{
+      background-color: @button-hover;
+    }
+  }
+
+
 .mobile-nav{
   @media @desktop{
     display: none;
