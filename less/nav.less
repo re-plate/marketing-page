@@ -5,6 +5,44 @@ nav {
     justify-content: space-between;
     overflow: hidden;
     background: @main-color;
+
+    .logo{
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        background: @main-color;
+        border: none;
+        color: @button-font;
+        text-decoration: none;
+        margin-right: 40%;
+        h1{
+        font-size: 6rem;
+        color: @button-font;
+        margin: 0px 0px;
+        &:hover{
+            color: @link-hover;
+            font-weight: bolder;
+        }
+
+        }
+        img{
+            width: 10rem;
+            margin: 1rem;
+
+            @media @mobile{
+                width: 50%;
+            }
+        }
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media @mobile{  
+            margin-right: 0;
+        }
+    }
     
     .dropdown{
         overflow: hidden;
@@ -28,8 +66,8 @@ nav {
          a{
             background: @main-color;
             color: @button-font;
-            padding: 2rem 4rem;
-            margin-left: 10rem;
+            padding: 1rem 1rem;
+            
             text-decoration: none;
             @media @mobile{
                 padding: 0 0;
@@ -47,42 +85,32 @@ nav {
             flex-direction: column;
         }
     }
-        .button{
-            border: 1px solid blue;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            background: @main-color;
-            border: none;
-            color: @button-font;
-            text-decoration: none;
-            h1{
-            font-size: 6rem;
-            color: @button-font;
-            margin: 0px 0px;
-            &:hover{
-                color: @link-hover;
-                font-weight: bolder;
-            }
-
-            }
-            img{
-                width: 10rem;
-                margin: 1rem;
-
-                @media @mobile{
-                    width: 50%;
-                }
-            }
-            @media @mobile{
-                display: flex;
-                flex-direction: column;
-            }
+    .button{
+        color: @button-font;
+        text-decoration: none;
+        font-size: 3.2rem;
+        font-family: 'Eczar', serif;
+        display: flex;
+        align-items:center;
+        i{
+            margin: 1rem;
         }
+        &:hover{
+            color: @link-hover;
+        }
+        @media @mobile{
+            display: none;
+        }
+    }
     }
 @media @mobile{
     display: flex;
     justify-content: center;
+}
+
+@media @mobile{
+    display: flex;
+    flex-direction: column;
 }
 }
         
@@ -90,12 +118,13 @@ nav {
         .login{
             display: flex;
             justify-content: flex-end;
+            margin-right: 2%;
          a{
             display: flex;
             justify-content: flex-end;
             color: @button-font;
             font-family: 'Eczar', serif;
-            font-size: 4rem;
+            font-size: 3.2rem;
             text-decoration: none;
             &:hover{
                 color: @link-hover;
