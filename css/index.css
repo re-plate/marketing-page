@@ -253,6 +253,9 @@ nav {
   margin-bottom: 1rem;
 }
 nav .logo {
+  width: 70%;
+}
+nav .logo a {
   border: 1px solid blue;
   display: flex;
   align-items: center;
@@ -263,32 +266,32 @@ nav .logo {
   text-decoration: none;
   margin-right: 40%;
 }
-nav .logo h1 {
+nav .logo a h1 {
   font-size: 6rem;
   color: #D9CBB0;
   margin: 0px 0px;
 }
-nav .logo h1:hover {
+nav .logo a h1:hover {
   color: #FFFFEB;
   font-weight: bolder;
 }
-nav .logo img {
+nav .logo a img {
   width: 10rem;
   margin: 1rem;
 }
 @media (max-width: 500px) {
-  nav .logo img {
+  nav .logo a img {
     width: 50%;
   }
 }
 @media (max-width: 500px) {
-  nav .logo {
+  nav .logo a {
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  nav .logo {
+  nav .logo a {
     margin-right: 0;
   }
 }
@@ -741,6 +744,7 @@ footer p {
   flex-direction: column;
   width: 48%;
   padding-right: 1%;
+  padding: 5%;
 }
 .team-bottom .content-section .text-content a {
   margin: 0 auto;
@@ -760,6 +764,7 @@ footer p {
 .team-bottom .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  padding: 5%;
 }
 @media (max-width: 500px) {
   .team-bottom .content-section .img-content {
