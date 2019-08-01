@@ -1,3 +1,9 @@
+.mid-section{
+    p{
+        margin: 2rem 7rem;
+    }
+}
+
 .team-bottom{
     .content-section {
         margin: 30px 0;
@@ -10,7 +16,14 @@
         flex-direction: column;
           width: 48%;
           padding-right: 1%;
-  
+          a{
+              margin: 0 auto;
+              font-size: 5rem;
+              color: @header-font;
+                &:hover{
+                  color: saturate(@header-font, 80%);
+              }
+          }
           @media @mobile{
               width: 96%;
               padding: 2%;

@@ -163,6 +163,13 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
+h3 i {
+  color: #4B5B41;
+  font-size: 2rem;
+}
+h3 i:hover {
+  color: saturate(80%);
+}
 p {
   line-height: 1.5;
   font-size: 1.5rem;
@@ -180,21 +187,6 @@ hr {
   margin-left: 4rem;
   margin-right: 4rem;
   padding: 2rem;
-}
-.get-started button {
-  display: flex;
-  margin: 0 auto;
-  padding: 2rem 5rem;
-  text-align: center;
-  font-family: 'Eczar', serif;
-  font-size: 2rem;
-  background-color: #0E535E;
-  color: #D9CBB0;
-  border: none;
-  border-radius: 2rem;
-}
-.get-started button:hover {
-  background-color: #4F8189;
 }
 @media (min-width: 501px) {
   .mobile-nav {
@@ -661,6 +653,9 @@ footer p {
     flex-direction: column;
   }
 }
+.mid-section p {
+  margin: 2rem 7rem;
+}
 .team-bottom .content-section {
   margin: 30px 0;
   display: flex;
@@ -673,6 +668,14 @@ footer p {
   flex-direction: column;
   width: 48%;
   padding-right: 1%;
+}
+.team-bottom .content-section .text-content a {
+  margin: 0 auto;
+  font-size: 5rem;
+  color: #4B5B41;
+}
+.team-bottom .content-section .text-content a:hover {
+  color: #3d9903;
 }
 @media (max-width: 500px) {
   .team-bottom .content-section .text-content {

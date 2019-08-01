@@ -206,6 +206,15 @@ h2 {
 }
 h3 {
   font-size: 2.5rem;
+
+i{
+  color: @header-font;
+  font-size: 2rem;
+  &:hover{
+    color: saturate(80%);
+  }
+}
+
 }
 p {
   line-height: 1.5;
@@ -225,12 +234,6 @@ hr{
   margin-left: 4rem;
   margin-right: 4rem;
   padding: 2rem;
-}
-
-.get-started{
-  button{
-    .defaultbutton();
-  }
 }
 
 .defaultbutton(){
