@@ -1,4 +1,5 @@
 .topsection{
+    background: url("https://placeholder.com");
     position: relative;
         h2{
             color: #D9CBB0;
@@ -6,19 +7,28 @@
         }
     }
     .topbuttons{
-        bottom: 20%;
-        left:35%;
         position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
 
         @media @mobile{
-            bottom: 5px;
-            left: 50px;
-            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 80%;
+        }
+
+        a{
+            text-decoration: none;
         }
         button{
             opacity: 0.8;
         .top-button();
         margin: 2rem;
+        @media @mobile{
+            margin: 0.7rem;
+        }
         &:hover{
             background-color: @buttonalt-hover;
         }

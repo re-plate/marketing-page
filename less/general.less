@@ -136,7 +136,7 @@ table {
 @header-font: #4B5B41;
 @button-font: #D9CBB0;
 
-@link-hover: #E3D9C5;
+@link-hover: #FFFFEB;
 
 @main-color: #0E535E;
 @button-hover: #4F8189;
@@ -157,11 +157,18 @@ table {
     padding: 1rem 2rem;
     text-align: center;
     font-family: 'Eczar', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: @buttonalt;
     color: @button-font;
     border: none;
     border-radius: 2rem;
+    a{
+    text-decoration: none;
+    }
+    @media @mobile{
+      font-size: 1.6rem;
+      padding: 1rem 3rem;
+    }
   }
 
 .mobile-format(@mobilewidth: 100%){
@@ -184,7 +191,7 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1200px;
+  
   margin: 0 auto;
   background-color: @main-color;
 }
@@ -227,13 +234,19 @@ hr{
     height: 3px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .container{
   background-color: @button-font;
   border-radius: 10px;
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding: 2rem;
+  margin: 2% 8%;
+  padding: 5rem;
+}
+
+button{
+  .defaultbutton();
 }
 
 .defaultbutton(){
@@ -262,3 +275,30 @@ hr{
   }
 }
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 7rem;
+  border-top: 3px solid #0B3D45;
+  padding: 1.5rem;
+  color: @button-font;
+  font-size: 1.4rem;
+
+  a{
+    color: @button-font;
+    margin: 1.5rem;
+    font-size: 3rem;
+    &:hover{
+      color: @link-hover;
+    }
+    @media @mobile{
+      margin: 0.5rem;
+      font-size: 2.5rem;
+    }
+  }
+  @media @mobile{
+    font-size: 1rem;
+    margin: 2rem 2rem;
+  }
+}
