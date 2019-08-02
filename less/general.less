@@ -1,0 +1,304 @@
+/* General Styles */
+
+/*reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Color Variables*/
+
+@header-font: #4B5B41;
+@button-font: #D9CBB0;
+
+@link-hover: #FFFFEB;
+
+@main-color: #0E535E;
+@button-hover: #4F8189;
+
+@buttonalt: #5F191B;
+@buttonalt-hover: #8A5759;
+
+
+@standard-margin: 1.5rem;
+//Responsive
+
+@mobile: ~"(max-width: 500px)";
+@desktop: ~"(min-width: 501px)";
+
+/*Mix Ins*/
+
+.top-button(){
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Eczar', serif;
+    font-size: 3rem;
+    background-color: @buttonalt;
+    color: @button-font;
+    border: none;
+    border-radius: 2rem;
+    a{
+    text-decoration: none;
+    }
+    @media @mobile{
+      font-size: 1.6rem;
+      padding: 1rem 3rem;
+    }
+  }
+
+.mobile-format(@mobilewidth: 100%){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: @mobilewidth;
+  }
+
+/*Global Styles*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+  margin: 0 auto;
+  background-color: @main-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Eczar', serif;
+  color: @header-font;
+  padding: 15px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.5rem;
+
+i{
+  color: @header-font;
+  font-size: 2rem;
+  &:hover{
+    color: saturate(80%);
+  }
+}
+
+}
+p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+hr{
+    background-color: @main-color;
+    margin: 15px;
+    height: 3px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  background-color: @button-font;
+  border-radius: 10px;
+  margin: 2% 8%;
+  padding: 5rem;
+}
+
+button{
+  .defaultbutton();
+}
+
+.defaultbutton(){
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: center;
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  background-color: @main-color;
+  color: @button-font;
+  border: none;
+  border-radius: 2rem;
+    &:hover{
+      background-color: @button-hover;
+    }
+  }
+
+
+.mobile-nav{
+  @media @desktop{
+    display: none;
+  }
+  @media @mobile{
+    display: initial;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 7rem;
+  border-top: 3px solid #0B3D45;
+  padding: 1.5rem;
+  color: @button-font;
+  font-size: 1.4rem;
+
+  a{
+    color: @button-font;
+    margin: 1.5rem;
+    font-size: 3rem;
+    &:hover{
+      color: @link-hover;
+    }
+    @media @mobile{
+      margin: 0.5rem;
+      font-size: 2.5rem;
+    }
+  }
+  @media @mobile{
+    font-size: 1rem;
+    margin: 2rem 2rem;
+  }
+}
